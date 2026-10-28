@@ -1,0 +1,20 @@
+[
+  {"file": "buildings/night.jpg",   "pexels": 14195688, "about": "Apartment building at night"},
+  {"file": "buildings/malqa.jpg",   "pexels": 15839821, "about": "Modern building in Saudi Arabia"},
+  {"file": "buildings/narjis.jpg",  "pexels": 32326246, "about": "Urban apartment building with balconies"},
+  {"file": "buildings/yasmin.jpg",  "pexels": 26859048, "about": "Villa with a swimming pool in the evening"},
+  {"file": "buildings/tower2.jpg",  "pexels": 11701050, "about": "Modern apartment building on sky background"},
+  {"file": "buildings/facade.jpg",  "pexels": 30271883, "about": "Modern apartment building facade in daylight"},
+  {"file": "interiors/living1.jpg", "pexels": 6588599,  "about": "Modern apartment living room"},
+  {"file": "interiors/living2.jpg", "pexels": 6527029,  "about": "Modern apartment with furniture"},
+  {"file": "interiors/studio.jpg",  "pexels": 7060814,  "about": "Minimalist studio apartment"},
+  {"file": "interiors/cozy.jpg",    "pexels": 6312353,  "about": "Cozy living room"},
+  {"file": "interiors/bedroom1.jpg","pexels": 6636262,  "about": "Bedroom in modern apartment"},
+  {"file": "interiors/bedroom2.jpg","pexels": 6492385,  "about": "Bedroom with glass wall"},
+  {"file": "interiors/kitchen1.jpg","pexels": 10099335, "about": "Modern white kitchen"},
+  {"file": "interiors/kitchen2.jpg","pexels": 6301168,  "about": "Kitchen with modern furniture"},
+  {"file": "maintenance/ac.jpg",         "pexels": 5463582,  "about": "Technician fixing an air conditioner"},
+  {"file": "maintenance/plumbing.jpg",   "pexels": 6419128,  "about": "Plumber installing pipe fittings"},
+  {"file": "maintenance/electrical.jpg", "pexels": 33694019, "about": "Technician at an electrical panel"},
+  {"file": "maintenance/general.jpg",    "pexels": 16509869, "about": "Man using a spanner"}
+]

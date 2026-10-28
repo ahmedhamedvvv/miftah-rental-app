@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="مِفتاح: تطبيق لإدارة العقارات المؤجرة. المستأجر يدفع الإيجار ويطلب الصيانة، والمالك يتابع التحصيل من واجهة حية. Miftah: rental property management for tenants and owners.">
+  <meta name="theme-color" content="#0A0F1C">
+  <meta property="og:title" content="مِفتاح | Miftah">
+  <meta property="og:description" content="تطبيق إدارة إيجارات للمستأجر والمالك، مبني بـ Flutter. جرّب الديمو مباشرة.">
+  <meta property="og:type" content="website">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="مِفتاح">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="manifest" href="manifest.json">
+  <title>مِفتاح | Miftah</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0A0F1C; }
+    #splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 22px;
+      transition: opacity .4s ease;
+    }
+    #splash .logo {
+      width: 88px; height: 88px; border-radius: 27px;
+      background: linear-gradient(135deg, #7088FF, #2F52F0 45%, #101A4A);
+      box-shadow: 0 18px 50px rgba(47,82,240,.45);
+      display: grid; place-items: center;
+    }
+    #splash .logo svg { animation: turn 1.6s ease-in-out infinite; }
+    #splash .windows { display: grid; grid-template-columns: repeat(4, 10px); gap: 5px; }
+    #splash .windows i { width: 10px; height: 7px; border-radius: 2px; background: #1C2740; animation: lit 1.6s ease-in-out infinite; }
+    @keyframes turn { 0%, 30% { transform: rotate(0); } 60%, 100% { transform: rotate(90deg); } }
+    @keyframes lit { 50% { background: #FFB547; box-shadow: 0 0 8px rgba(255,181,71,.6); } }
+  </style>
+</head>
+<body>
+  <div id="splash">
+    <div class="logo">
+      <svg width="54" height="54" viewBox="0 0 44 44" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round">
+        <circle cx="15" cy="22" r="8"/><path d="M23 22h15M33 22v7M38 22v5"/>
+      </svg>
+    </div>
+    <div class="windows">
+      <i style="animation-delay:.0s"></i><i style="animation-delay:.1s"></i><i style="animation-delay:.2s"></i><i style="animation-delay:.3s"></i>
+      <i style="animation-delay:.4s"></i><i style="animation-delay:.5s"></i><i style="animation-delay:.6s"></i><i style="animation-delay:.7s"></i>
+    </div>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

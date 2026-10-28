@@ -1,0 +1,101 @@
+name: Test, build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: 3.47.8
+
+jobs:
+  # Pulls the Pexels photos listed in tool/photos.json into assets/photos and
+  # commits any that are new, so the repository always holds the real images.
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tool/fetch_photos.py
+      - name: Commit new photos
+        run: |
+          git add assets/photos
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add real photos [skip ci]"
+          git push
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+  android:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tool/fetch_photos.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter build apk --release
+      - run: cp build/app/outputs/flutter-apk/app-release.apk miftah.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: miftah.apk
+      - name: Publish APK to the "demo" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view demo >/dev/null 2>&1 || \
+            gh release create demo --title "Miftah demo build" \
+              --notes "Latest Android build of the Miftah demo. Install miftah.apk on any Android phone."
+          gh release upload demo miftah.apk --clobber
+
+  web:
+    needs: android
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tool/fetch_photos.py
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+      - run: flutter pub get
+      - run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+      # The demo page offers the APK as a direct download next to the phone.
+      - uses: actions/download-artifact@v4
+        with:
+          name: apk
+          path: build/web
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+      - id: deployment
+        uses: actions/deploy-pages@v4

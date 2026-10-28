@@ -1,0 +1,566 @@
+{
+  "@@locale": "en",
+  "appName": "Miftah",
+  "welcomeEyebrow": "RENTAL PROPERTY MANAGEMENT",
+  "welcomeTitle": "Your whole building on one screen",
+  "welcomeSubtitle": "Tenants pay rent and request maintenance from their phone. Owners follow collections and units as they happen.",
+  "roleTenant": "I'm a tenant",
+  "roleTenantDesc": "Pay rent, view your lease, request repairs",
+  "roleOwner": "I'm an owner or agency",
+  "roleOwnerDesc": "Live facade, collections, maintenance, reports",
+  "demoNote": "Demo with realistic sample data from Riyadh",
+  "navHome": "Home",
+  "navPayments": "Payments",
+  "navMaintenance": "Maintenance",
+  "navLease": "Lease",
+  "navFacade": "Facade",
+  "navProperties": "Properties",
+  "navCollections": "Collections",
+  "navReports": "Reports",
+  "statusPaid": "Paid",
+  "statusDueSoon": "Due soon",
+  "statusLate": "Late",
+  "statusVacant": "Vacant",
+  "statusUnpaid": "Due",
+  "kindApartment": "Apartment",
+  "kindVilla": "Villa",
+  "kindShop": "Shop",
+  "kindOffice": "Office",
+  "freqAnnual": "Annual",
+  "freqSemiAnnual": "Semi-annual",
+  "freqQuarterly": "Quarterly",
+  "freqMonthly": "Monthly",
+  "methodMada": "mada card",
+  "methodBank": "Bank transfer",
+  "methodCash": "Cash",
+  "catAc": "Air conditioning",
+  "catPlumbing": "Plumbing",
+  "catElectrical": "Electrical",
+  "catAppliances": "Appliances",
+  "catOther": "General repair",
+  "tsOpen": "Received",
+  "tsAssigned": "Technician assigned",
+  "tsInProgress": "In progress",
+  "tsDone": "Completed",
+  "slotMorning": "Morning",
+  "slotAfternoon": "Afternoon",
+  "slotEvening": "Evening",
+  "goodMorning": "Good morning, {name}",
+  "@goodMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "goodEvening": "Good evening, {name}",
+  "@goodEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifications": "Notifications",
+  "tapCardHint": "Tap the card to see your lease",
+  "payRent": "Pay rent",
+  "payNowLate": "Pay now, this payment is late",
+  "noOpenRequests": "No open requests",
+  "allGood": "Tap to request a repair",
+  "paidOfTotal": "{paid} of {total}",
+  "@paidOfTotal": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "installmentsThisLease": "payments made",
+  "myHome": "My home",
+  "bedrooms": "{count, plural, =1{1 bedroom} other{{count} bedrooms}}",
+  "@bedrooms": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "areaSqm": "{n} m²",
+  "@areaSqm": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "floorN": "Floor {n}",
+  "@floorN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "quickActions": "Quick actions",
+  "newRequest": "New maintenance request",
+  "myLease": "My lease",
+  "contactOwner": "Contact the owner",
+  "contactOwnerBody": "The property office replies during working hours.",
+  "officeName": "Office",
+  "officeNameValue": "Al Ofoq Properties",
+  "officeLicense": "FAL license 1200012345",
+  "phone": "Phone",
+  "workingHours": "Working hours",
+  "workingHoursValue": "Sun to Thu, 9 am – 6 pm",
+  "done": "Done",
+  "allPaid": "All payments made",
+  "nextInstallment": "Next payment",
+  "lateShort": "late",
+  "daysShort": "days",
+  "leaseEnds": "Lease ends {date}",
+  "@leaseEnds": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "wasDue": "Was due {date}",
+  "@wasDue": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueOn": "Due {date}",
+  "@dueOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leaseDetails": "Lease details",
+  "unit": "Unit",
+  "leasePeriod": "Lease period",
+  "annualRent": "Annual rent",
+  "paymentPlan": "Payment plan",
+  "paySubtitle": "Pay securely and get your receipt instantly.",
+  "payAmount": "Pay {amount}",
+  "@payAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentN": "Payment {n}",
+  "@installmentN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "rent": "Rent",
+  "vat": "VAT",
+  "vatExempt": "Exempt (residential)",
+  "vat15": "15%",
+  "payWith": "Pay with",
+  "applePayNote": "Confirm with Face ID or Touch ID on your device.",
+  "stcPayNote": "A payment request will be sent to the STC Pay wallet on {phone}.",
+  "@stcPayNote": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "bankName": "Bank",
+  "bankNameValue": "Al Rajhi Bank",
+  "beneficiary": "Beneficiary",
+  "bankNote": "Add your unit number to the transfer note. In the demo the transfer is recorded right away.",
+  "secureNote": "Demo only: no real money is charged.",
+  "paymentDone": "Payment successful",
+  "paymentDoneBody": "Your payment reached the owner and your history is updated.",
+  "receipt": "Receipt",
+  "receiptBody": "Electronic receipt issued by the property office.",
+  "receiptNo": "Receipt no.",
+  "paidOn": "Paid on",
+  "method": "Method",
+  "tenant": "Tenant",
+  "ejarContract": "Ejar contract",
+  "installmentLabel": "Installment",
+  "installmentOf": "Payment {n} of {total}",
+  "@installmentOf": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "totalPaid": "Total",
+  "backHome": "Back to home",
+  "copyReceipt": "Copy receipt",
+  "copied": "Copied",
+  "paymentsSubtitle": "All your payments and receipts in one place.",
+  "paidThisLease": "Paid this lease",
+  "remaining": "Remaining",
+  "upcoming": "Upcoming",
+  "paidHistory": "Paid",
+  "nothingDue": "Nothing due right now",
+  "maintenanceSubtitle": "Request a technician and follow every step.",
+  "newRequestHint": "AC, plumbing, electrical and more",
+  "activeRequests": "Open requests",
+  "pastRequests": "Past requests",
+  "noPastRequests": "No past requests",
+  "urgent": "Urgent",
+  "stepWhat": "What's the problem?",
+  "stepDescribe": "Describe the problem",
+  "stepWhen": "When should the technician come?",
+  "next": "Next",
+  "back": "Back",
+  "sendRequest": "Send request",
+  "requestSent": "Request #{n} sent",
+  "@requestSent": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "describeHint": "e.g. The AC has been noisy and not cooling since yesterday",
+  "urgentTitle": "This is urgent",
+  "urgentBody": "Water leak, power cut or a safety risk",
+  "visitDay": "Visit on {date}",
+  "@visitDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "category": "Type",
+  "priority": "Priority",
+  "normal": "Normal",
+  "details": "Details",
+  "presetAc1": "AC not cooling",
+  "presetAc2": "AC is very noisy",
+  "presetAc3": "AC is leaking water",
+  "presetPl1": "Leak under the sink",
+  "presetPl2": "Water heater not heating",
+  "presetPl3": "Blocked drain",
+  "presetEl1": "Breaker keeps tripping",
+  "presetEl2": "Sockets not working",
+  "presetEl3": "Lights not working",
+  "presetAp1": "Oven not working",
+  "presetAp2": "Garage door gets stuck",
+  "presetOt1": "Door lock jams",
+  "presetOt2": "Cracks in the wall",
+  "technician": "Technician",
+  "change": "Change",
+  "preferredTime": "Preferred time",
+  "cost": "Cost",
+  "costSar": "Cost (SAR)",
+  "thanksRating": "Thanks for rating",
+  "assignTechnician": "Assign technician",
+  "assigned": "Technician assigned and tenant notified",
+  "startWork": "Start work",
+  "markDone": "Mark as done",
+  "confirm": "Confirm",
+  "ticketClosed": "Request closed",
+  "tenantRating": "Tenant rating",
+  "rateService": "Rate the service",
+  "yourRating": "Your rating",
+  "leaseSubtitle": "Your lease is registered on Ejar.",
+  "ejarRegistered": "Registered on Ejar",
+  "daysLeftInLease": "{n} days left",
+  "@daysLeftInLease": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "nationalId": "National ID",
+  "property": "Property",
+  "leaseType": "Lease type",
+  "residential": "Residential",
+  "commercial": "Commercial",
+  "commercialVat": "Commercial (+15% VAT)",
+  "securityDeposit": "Security deposit",
+  "schedule": "Payment schedule",
+  "renewTitle": "Want to renew?",
+  "renewBody": "Send a renewal request to the owner well before the lease ends.",
+  "requestRenewal": "Request renewal",
+  "renewalSent": "Renewal request sent",
+  "renewalSentBody": "The owner will review it and get in touch.",
+  "preferences": "Preferences",
+  "language": "Language",
+  "darkMode": "Dark mode",
+  "lightMode": "Light mode",
+  "switchToOwner": "Try the owner side",
+  "switchToTenant": "Try the tenant side",
+  "resetDemo": "Reset demo",
+  "demoReset": "Demo data restored",
+  "backToWelcome": "Back to start",
+  "tenants": "Tenants",
+  "settings": "Settings",
+  "collectedThisMonth": "Collected this month",
+  "paymentsCount": "{count, plural, =1{1 payment} other{{count} payments}}",
+  "@paymentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "overdue": "Overdue",
+  "openTickets": "Open requests",
+  "occupancy": "Occupancy",
+  "occupancyBody": "{a} of {b} units leased",
+  "@occupancyBody": {
+    "placeholders": {
+      "a": {
+        "type": "int"
+      },
+      "b": {
+        "type": "int"
+      }
+    }
+  },
+  "liveFacade": "Live facade",
+  "viewProperty": "View property",
+  "needsAttention": "Needs attention",
+  "lateRent": "Late rent: {name}",
+  "@lateRent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "daysLate": "{count, plural, =1{1 day late} other{{count} days late}}",
+  "@daysLate": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "newTicket": "{category} request",
+  "@newTicket": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "leaseEnding": "Lease ending: {name}",
+  "@leaseEnding": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inDays": "{count, plural, =0{Today} =1{Tomorrow} other{In {count} days}}",
+  "@inDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "overdueSince": "Overdue since",
+  "vacantSince": "This unit is vacant and ready to lease.",
+  "openUnit": "Unit file",
+  "leaseIt": "Lease it",
+  "propertiesSubtitle": "{p} properties · {u} units",
+  "@propertiesSubtitle": {
+    "placeholders": {
+      "p": {
+        "type": "int"
+      },
+      "u": {
+        "type": "int"
+      }
+    }
+  },
+  "newLease": "New lease",
+  "units": "Units",
+  "yearIncome": "12-month income",
+  "builtIn": "Built {year}",
+  "@builtIn": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "all": "All",
+  "rooms": "Rooms",
+  "area": "Area",
+  "unitVacantTitle": "This unit is vacant",
+  "unitVacantBody": "Add a tenant and lease in under a minute, and its window lights up on the facade.",
+  "renewal": "Renewal",
+  "renewalRequested": "Tenant asked to renew",
+  "maintenanceHistory": "Maintenance history",
+  "collectionRate": "Collection rate this month",
+  "collectedOf": "{a} of {b}",
+  "@collectedOf": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "collected": "Collected",
+  "dueThisMonth": "Due this month",
+  "nothingHere": "Nothing here",
+  "sendReminder": "Remind",
+  "reminderSent": "Reminded",
+  "recordCash": "Record payment",
+  "paymentRecorded": "Payment recorded, the window is lit",
+  "viaWhatsApp": "Via WhatsApp to {phone}",
+  "@viaWhatsApp": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderLateMsg": "Hello {name}, a reminder that the rent for unit {unit} of {amount} was due on {date}. You can pay in the Miftah app. Thank you.",
+  "@reminderLateMsg": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderSoonMsg": "Hello {name}, a reminder that the rent for unit {unit} of {amount} is due on {date}. You can pay early in the Miftah app.",
+  "@reminderSoonMsg": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "send": "Send",
+  "reminderSentTo": "Reminder sent to {name}",
+  "@reminderSentTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "boardSubtitle": "{open} open · maintenance spend {spend}. Drag a card to move it.",
+  "@boardSubtitle": {
+    "placeholders": {
+      "open": {
+        "type": "int"
+      },
+      "spend": {
+        "type": "String"
+      }
+    }
+  },
+  "dropHere": "Drop a request here",
+  "movedTo": "Moved to: {status}",
+  "@movedTo": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsSubtitle": "Your income and occupancy over the last 12 months.",
+  "allProperties": "All properties",
+  "income12m": "Income, last 12 months",
+  "bestMonth": "Best month: {month}",
+  "@bestMonth": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "byProperty": "By property",
+  "occupancyByProperty": "Occupancy by property",
+  "methodsMix": "Payment methods",
+  "tenantsSubtitle": "{n} tenants with active leases",
+  "@tenantsSubtitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "searchTenants": "Search by name or unit",
+  "chooseUnit": "Choose a unit",
+  "tenantDetails": "Tenant details",
+  "leaseTerms": "Lease terms",
+  "vacantUnitsCount": "{n} vacant units",
+  "@vacantUnitsCount": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "fullName": "Full name",
+  "mobile": "Mobile number",
+  "phoneInvalid": "A Saudi mobile starting with 5, 9 digits",
+  "nationalIdOrIqama": "National ID or Iqama",
+  "fillSample": "Fill with sample data",
+  "startDate": "Start date",
+  "today": "Today",
+  "firstOfNextMonth": "1st of next month",
+  "annualRentSar": "Annual rent (SAR)",
+  "installment": "Installments",
+  "ejarNote": "After confirming, the lease is filed on Ejar and the tenant gets a link to sign.",
+  "createLease": "Create lease",
+  "leaseCreated": "Lease created and unit leased",
+  "city": "City",
+  "riyadh": "Riyadh",
+  "vatNumber": "VAT number",
+  "builtWith": "Built with Flutter · Android, iOS and web",
+  "frameTitle": "Rental management that looks as good as your building",
+  "frameSubtitle": "One app for tenants and owners: rent payments, maintenance, leases and collections, with a live facade that shows every unit at a glance.",
+  "featureFacade": "Live facade: every window is a unit, lit by its rent status",
+  "featureKeyCard": "Tenant's digital key card that flips to show the lease",
+  "featurePayments": "Pay with mada, Apple Pay or STC Pay with instant receipts",
+  "featureMaintenance": "Maintenance requests with a timeline and a drag-and-drop board",
+  "featureBilingual": "Arabic and English, dark and light",
+  "frameTryIt": "Try it now",
+  "downloadApk": "Download for Android"
+}

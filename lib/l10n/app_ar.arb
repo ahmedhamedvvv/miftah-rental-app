@@ -1,0 +1,566 @@
+{
+  "@@locale": "ar",
+  "appName": "مِفتاح",
+  "welcomeEyebrow": "إدارة الأملاك المؤجرة",
+  "welcomeTitle": "عمارتك كلها في شاشة واحدة",
+  "welcomeSubtitle": "المستأجر يدفع إيجاره ويطلب الصيانة من جواله، والمالك يتابع التحصيل والوحدات لحظة بلحظة.",
+  "roleTenant": "أنا مستأجر",
+  "roleTenantDesc": "ادفع إيجارك، تابع عقدك واطلب صيانة",
+  "roleOwner": "أنا مالك أو مكتب عقار",
+  "roleOwnerDesc": "الواجهة الحية، التحصيل، الصيانة والتقارير",
+  "demoNote": "نسخة تجريبية ببيانات واقعية من الرياض",
+  "navHome": "الرئيسية",
+  "navPayments": "الدفعات",
+  "navMaintenance": "الصيانة",
+  "navLease": "العقد",
+  "navFacade": "الواجهة",
+  "navProperties": "العقارات",
+  "navCollections": "التحصيل",
+  "navReports": "التقارير",
+  "statusPaid": "مدفوع",
+  "statusDueSoon": "قرّب",
+  "statusLate": "متأخر",
+  "statusVacant": "شاغرة",
+  "statusUnpaid": "مستحق",
+  "kindApartment": "شقة",
+  "kindVilla": "فيلا",
+  "kindShop": "محل",
+  "kindOffice": "مكتب",
+  "freqAnnual": "دفعة سنوية",
+  "freqSemiAnnual": "نصف سنوي",
+  "freqQuarterly": "ربع سنوي",
+  "freqMonthly": "شهري",
+  "methodMada": "بطاقة مدى",
+  "methodBank": "تحويل بنكي",
+  "methodCash": "نقدًا",
+  "catAc": "تكييف",
+  "catPlumbing": "سباكة",
+  "catElectrical": "كهرباء",
+  "catAppliances": "أجهزة ومطبخ",
+  "catOther": "صيانة عامة",
+  "tsOpen": "تم الاستلام",
+  "tsAssigned": "تم تعيين فني",
+  "tsInProgress": "جاري العمل",
+  "tsDone": "تم الإنجاز",
+  "slotMorning": "الصباح",
+  "slotAfternoon": "بعد الظهر",
+  "slotEvening": "المساء",
+  "goodMorning": "صباح الخير، {name}",
+  "@goodMorning": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "goodEvening": "مساء الخير، {name}",
+  "@goodEvening": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notifications": "الإشعارات",
+  "tapCardHint": "اضغط على الكارت عشان تشوف عقدك",
+  "payRent": "ادفع الإيجار",
+  "payNowLate": "ادفع الآن، الدفعة متأخرة",
+  "noOpenRequests": "ما فيه طلبات مفتوحة",
+  "allGood": "اضغط لطلب صيانة",
+  "paidOfTotal": "{paid} من {total}",
+  "@paidOfTotal": {
+    "placeholders": {
+      "paid": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "installmentsThisLease": "دفعات مسددة",
+  "myHome": "وحدتي",
+  "bedrooms": "{count, plural, =1{غرفة نوم} =2{غرفتين نوم} few{{count} غرف نوم} other{{count} غرفة نوم}}",
+  "@bedrooms": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "areaSqm": "{n} م²",
+  "@areaSqm": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "floorN": "الدور {n}",
+  "@floorN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "quickActions": "إجراءات سريعة",
+  "newRequest": "طلب صيانة جديد",
+  "myLease": "عقدي",
+  "contactOwner": "تواصل مع المالك",
+  "contactOwnerBody": "مكتب إدارة العقار يرد عليك خلال ساعات العمل.",
+  "officeName": "المكتب",
+  "officeNameValue": "الأفق لإدارة الأملاك",
+  "officeLicense": "ترخيص فال 1200012345",
+  "phone": "الهاتف",
+  "workingHours": "ساعات العمل",
+  "workingHoursValue": "الأحد إلى الخميس، 9 ص – 6 م",
+  "done": "تم",
+  "allPaid": "كل الدفعات مسددة",
+  "nextInstallment": "الدفعة الجاية",
+  "lateShort": "متأخرة",
+  "daysShort": "يوم",
+  "leaseEnds": "العقد ينتهي {date}",
+  "@leaseEnds": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "wasDue": "كانت مستحقة {date}",
+  "@wasDue": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "dueOn": "تستحق {date}",
+  "@dueOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leaseDetails": "تفاصيل العقد",
+  "unit": "الوحدة",
+  "leasePeriod": "مدة العقد",
+  "annualRent": "الإيجار السنوي",
+  "paymentPlan": "طريقة السداد",
+  "paySubtitle": "ادفع بأمان، والإيصال يوصلك فورًا.",
+  "payAmount": "ادفع {amount}",
+  "@payAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "installmentN": "الدفعة رقم {n}",
+  "@installmentN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "rent": "الإيجار",
+  "vat": "ضريبة القيمة المضافة",
+  "vatExempt": "معفى (سكني)",
+  "vat15": "15%",
+  "payWith": "طريقة الدفع",
+  "applePayNote": "أكّد الدفع ببصمة الوجه أو الإصبع على جهازك.",
+  "stcPayNote": "بيوصلك طلب الدفع على محفظة STC Pay المسجلة برقم {phone}.",
+  "@stcPayNote": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "bankName": "البنك",
+  "bankNameValue": "مصرف الراجحي",
+  "beneficiary": "المستفيد",
+  "bankNote": "اكتب رقم الوحدة في ملاحظة التحويل. في الديمو يتسجل التحويل مباشرة.",
+  "secureNote": "نسخة تجريبية: ما فيه أي خصم حقيقي من حسابك.",
+  "paymentDone": "تم الدفع بنجاح",
+  "paymentDoneBody": "وصلت دفعتك للمالك وتحدّث سجل دفعاتك.",
+  "receipt": "الإيصال",
+  "receiptBody": "إيصال إلكتروني معتمد من مكتب العقار.",
+  "receiptNo": "رقم الإيصال",
+  "paidOn": "تاريخ الدفع",
+  "method": "الطريقة",
+  "tenant": "المستأجر",
+  "ejarContract": "عقد إيجار",
+  "installmentLabel": "الدفعة",
+  "installmentOf": "الدفعة {n} من {total}",
+  "@installmentOf": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "totalPaid": "الإجمالي",
+  "backHome": "رجوع للرئيسية",
+  "copyReceipt": "نسخ الإيصال",
+  "copied": "تم النسخ",
+  "paymentsSubtitle": "كل دفعاتك وإيصالاتك في مكان واحد.",
+  "paidThisLease": "المدفوع من العقد",
+  "remaining": "المتبقي",
+  "upcoming": "الجاية",
+  "paidHistory": "المدفوعة",
+  "nothingDue": "ما عليك أي دفعات حاليًا",
+  "maintenanceSubtitle": "اطلب فني وتابع طلبك خطوة بخطوة.",
+  "newRequestHint": "تكييف، سباكة، كهرباء والمزيد",
+  "activeRequests": "طلبات مفتوحة",
+  "pastRequests": "طلبات سابقة",
+  "noPastRequests": "ما فيه طلبات سابقة",
+  "urgent": "عاجل",
+  "stepWhat": "وش المشكلة؟",
+  "stepDescribe": "وصّف لنا المشكلة",
+  "stepWhen": "متى يناسبك الفني؟",
+  "next": "التالي",
+  "back": "رجوع",
+  "sendRequest": "إرسال الطلب",
+  "requestSent": "تم إرسال طلبك #{n}",
+  "@requestSent": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "describeHint": "مثال: المكيف يطلع صوت ومو يبرد من أمس",
+  "urgentTitle": "الطلب عاجل",
+  "urgentBody": "تسريب مويه، انقطاع كهرباء أو خطر",
+  "visitDay": "الزيارة يوم {date}",
+  "@visitDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "category": "النوع",
+  "priority": "الأولوية",
+  "normal": "عادي",
+  "details": "التفاصيل",
+  "presetAc1": "المكيف ما يبرد",
+  "presetAc2": "صوت عالي من المكيف",
+  "presetAc3": "تسريب مويه من المكيف",
+  "presetPl1": "تسريب تحت المغسلة",
+  "presetPl2": "السخان ما يسخن",
+  "presetPl3": "انسداد في التصريف",
+  "presetEl1": "الكهرباء تفصل",
+  "presetEl2": "أفياش ما تشتغل",
+  "presetEl3": "إضاءة معطلة",
+  "presetAp1": "الفرن ما يشتغل",
+  "presetAp2": "باب الكراج يعلق",
+  "presetOt1": "قفل الباب يعلق",
+  "presetOt2": "تشققات في الجدار",
+  "technician": "الفني",
+  "change": "تغيير",
+  "preferredTime": "الوقت المفضل",
+  "cost": "التكلفة",
+  "costSar": "التكلفة (ر.س)",
+  "thanksRating": "شكرًا لتقييمك",
+  "assignTechnician": "تعيين فني",
+  "assigned": "تم تعيين الفني وإشعار المستأجر",
+  "startWork": "بدء العمل",
+  "markDone": "إنهاء الطلب",
+  "confirm": "تأكيد",
+  "ticketClosed": "تم إنهاء الطلب",
+  "tenantRating": "تقييم المستأجر",
+  "rateService": "قيّم الخدمة",
+  "yourRating": "تقييمك",
+  "leaseSubtitle": "عقدك موثّق في منصة إيجار.",
+  "ejarRegistered": "موثّق في إيجار",
+  "daysLeftInLease": "باقي {n} يوم",
+  "@daysLeftInLease": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "nationalId": "رقم الهوية",
+  "property": "العقار",
+  "leaseType": "نوع العقد",
+  "residential": "سكني",
+  "commercial": "تجاري",
+  "commercialVat": "تجاري (+15% ضريبة)",
+  "securityDeposit": "مبلغ التأمين",
+  "schedule": "جدول الدفعات",
+  "renewTitle": "تبي تجدد عقدك؟",
+  "renewBody": "أرسل طلب التجديد للمالك قبل انتهاء العقد بوقت كافي.",
+  "requestRenewal": "طلب تجديد",
+  "renewalSent": "تم إرسال طلب التجديد",
+  "renewalSentBody": "المالك بيراجع الطلب ويتواصل معك.",
+  "preferences": "الإعدادات",
+  "language": "اللغة",
+  "darkMode": "الوضع الليلي",
+  "lightMode": "الوضع النهاري",
+  "switchToOwner": "جرّب واجهة المالك",
+  "switchToTenant": "جرّب واجهة المستأجر",
+  "resetDemo": "إعادة تعيين الديمو",
+  "demoReset": "رجعت البيانات التجريبية لحالتها الأولى",
+  "backToWelcome": "شاشة البداية",
+  "tenants": "المستأجرين",
+  "settings": "الإعدادات",
+  "collectedThisMonth": "المحصّل هذا الشهر",
+  "paymentsCount": "{count, plural, =0{ما فيه دفعات} =1{دفعة واحدة} =2{دفعتين} few{{count} دفعات} other{{count} دفعة}}",
+  "@paymentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "overdue": "متأخرات",
+  "openTickets": "طلبات صيانة",
+  "occupancy": "الإشغال",
+  "occupancyBody": "{a} وحدة مؤجرة من أصل {b}",
+  "@occupancyBody": {
+    "placeholders": {
+      "a": {
+        "type": "int"
+      },
+      "b": {
+        "type": "int"
+      }
+    }
+  },
+  "liveFacade": "الواجهة الحية",
+  "viewProperty": "عرض العقار",
+  "needsAttention": "يحتاج متابعة",
+  "lateRent": "إيجار متأخر: {name}",
+  "@lateRent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "daysLate": "{count, plural, =1{متأخر يوم} =2{متأخر يومين} few{متأخر {count} أيام} other{متأخر {count} يوم}}",
+  "@daysLate": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "newTicket": "طلب {category}",
+  "@newTicket": {
+    "placeholders": {
+      "category": {
+        "type": "String"
+      }
+    }
+  },
+  "leaseEnding": "عقد ينتهي: {name}",
+  "@leaseEnding": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inDays": "{count, plural, =0{اليوم} =1{بكرة} =2{بعد يومين} few{بعد {count} أيام} other{بعد {count} يوم}}",
+  "@inDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "overdueSince": "متأخر من",
+  "vacantSince": "الوحدة شاغرة وجاهزة للتأجير.",
+  "openUnit": "ملف الوحدة",
+  "leaseIt": "أجّر الوحدة",
+  "propertiesSubtitle": "{p} عقارات · {u} وحدة",
+  "@propertiesSubtitle": {
+    "placeholders": {
+      "p": {
+        "type": "int"
+      },
+      "u": {
+        "type": "int"
+      }
+    }
+  },
+  "newLease": "عقد جديد",
+  "units": "الوحدات",
+  "yearIncome": "دخل 12 شهر",
+  "builtIn": "بناء {year}",
+  "@builtIn": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "all": "الكل",
+  "rooms": "الغرف",
+  "area": "المساحة",
+  "unitVacantTitle": "الوحدة شاغرة",
+  "unitVacantBody": "أضف المستأجر والعقد في أقل من دقيقة، والشباك ينوّر في الواجهة مباشرة.",
+  "renewal": "التجديد",
+  "renewalRequested": "المستأجر طلب التجديد",
+  "maintenanceHistory": "سجل الصيانة",
+  "collectionRate": "نسبة التحصيل هذا الشهر",
+  "collectedOf": "{a} من {b}",
+  "@collectedOf": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "collected": "محصّل",
+  "dueThisMonth": "مستحق هذا الشهر",
+  "nothingHere": "ما فيه شي هنا",
+  "sendReminder": "تذكير",
+  "reminderSent": "تم التذكير",
+  "recordCash": "تسجيل دفعة",
+  "paymentRecorded": "تم تسجيل الدفعة والشباك نوّر",
+  "viaWhatsApp": "عبر واتساب إلى {phone}",
+  "@viaWhatsApp": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderLateMsg": "السلام عليكم {name}، نذكّرك إن دفعة الإيجار لوحدة {unit} بقيمة {amount} كانت مستحقة بتاريخ {date}. تقدر تدفع من تطبيق مفتاح. شكرًا لك.",
+  "@reminderLateMsg": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderSoonMsg": "السلام عليكم {name}، نذكّرك إن دفعة الإيجار لوحدة {unit} بقيمة {amount} مستحقة بتاريخ {date}. تقدر تدفع مبكر من تطبيق مفتاح.",
+  "@reminderSoonMsg": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "send": "إرسال",
+  "reminderSentTo": "تم إرسال التذكير إلى {name}",
+  "@reminderSentTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "boardSubtitle": "{open} طلب مفتوح · صرف الصيانة {spend}. اسحب الكرت لتغيير حالته.",
+  "@boardSubtitle": {
+    "placeholders": {
+      "open": {
+        "type": "int"
+      },
+      "spend": {
+        "type": "String"
+      }
+    }
+  },
+  "dropHere": "اسحب الطلب هنا",
+  "movedTo": "انتقل إلى: {status}",
+  "@movedTo": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "reportsSubtitle": "دخلك وإشغالك خلال آخر 12 شهر.",
+  "allProperties": "كل العقارات",
+  "income12m": "الدخل خلال 12 شهر",
+  "bestMonth": "أعلى شهر: {month}",
+  "@bestMonth": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      }
+    }
+  },
+  "byProperty": "حسب العقار",
+  "occupancyByProperty": "الإشغال حسب العقار",
+  "methodsMix": "طرق الدفع",
+  "tenantsSubtitle": "{n} مستأجر بعقود سارية",
+  "@tenantsSubtitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "searchTenants": "ابحث بالاسم أو رقم الوحدة",
+  "chooseUnit": "اختر الوحدة",
+  "tenantDetails": "بيانات المستأجر",
+  "leaseTerms": "شروط العقد",
+  "vacantUnitsCount": "{n} وحدات شاغرة",
+  "@vacantUnitsCount": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "fullName": "الاسم الكامل",
+  "mobile": "رقم الجوال",
+  "phoneInvalid": "رقم جوال سعودي يبدأ بـ 5 ومكوّن من 9 أرقام",
+  "nationalIdOrIqama": "رقم الهوية أو الإقامة",
+  "fillSample": "تعبئة ببيانات تجريبية",
+  "startDate": "بداية العقد",
+  "today": "اليوم",
+  "firstOfNextMonth": "أول الشهر الجاي",
+  "annualRentSar": "الإيجار السنوي (ر.س)",
+  "installment": "الدفعات",
+  "ejarNote": "بعد التأكيد يتسجل العقد في إيجار ويوصل المستأجر رابط التوثيق.",
+  "createLease": "إنشاء العقد",
+  "leaseCreated": "تم إنشاء العقد وتأجير الوحدة",
+  "city": "المدينة",
+  "riyadh": "الرياض",
+  "vatNumber": "الرقم الضريبي",
+  "builtWith": "مبني بـ Flutter · Android و iOS والويب",
+  "frameTitle": "إدارة الإيجارات بشكل يليق بعقارك",
+  "frameSubtitle": "تطبيق للمستأجر والمالك في نفس الوقت: دفع الإيجار، الصيانة، العقود والتحصيل، بواجهة حية تبيّن حالة كل وحدة.",
+  "featureFacade": "واجهة حية: كل شباك وحدة ولونه حالة الإيجار",
+  "featureKeyCard": "كارت مفتاح رقمي للمستأجر بيتقلب ويبيّن العقد",
+  "featurePayments": "دفع بمدى و Apple Pay و STC Pay مع إيصالات فورية",
+  "featureMaintenance": "طلبات صيانة بخط زمني ولوحة سحب وإفلات للمالك",
+  "featureBilingual": "عربي وإنجليزي، ليلي ونهاري",
+  "frameTryIt": "جرّب الآن",
+  "downloadApk": "حمّل نسخة أندرويد"
+}
