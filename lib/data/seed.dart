@@ -79,7 +79,7 @@ Portfolio buildSeed(DateTime today) {
       district: Bi('حي الملقا', 'Al Malqa'),
       city: Bi('الرياض', 'Riyadh'),
       kind: PropertyKind.tower,
-      photo: 'buildings/malqa.jpg',
+      photo: 'buildings/tower2.jpg',
       floors: 10,
       unitsPerFloor: 4,
       builtYear: 2022,
