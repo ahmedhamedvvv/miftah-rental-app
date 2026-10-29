@@ -48,4 +48,4 @@ app.*.map.json
 .widget_preview/
 
 # Photo downloads in progress
-assets/photos/**/*.raw
+assets/photos/**/*.download.jpg

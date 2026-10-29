@@ -26,19 +26,20 @@ def main() -> int:
         pid = p["pexels"]
         url = (f"https://images.pexels.com/photos/{pid}/pexels-photo-{pid}.jpeg"
                "?auto=compress&cs=tinysrgb&w=1400")
-        raw = dest.with_suffix(".raw")
+        raw = dest.with_name(dest.stem + ".download.jpg")
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=60) as r:
-                raw.write_bytes(r.read())
+                data = r.read()
+            if not data.startswith(b"\xff\xd8"):
+                raise ValueError(f"not a JPEG ({len(data)} bytes): {data[:60]!r}")
+            raw.write_bytes(data)
             tool = shutil.which("magick") or shutil.which("convert")
-            if tool:
-                subprocess.run(
-                    [tool, str(raw), "-resize", "1080x1080>", "-strip",
-                     "-interlace", "Plane", "-quality", "78", str(dest)],
-                    check=True,
-                )
-            else:
+            resized = tool and subprocess.run(
+                [tool, f"jpg:{raw}", "-resize", "1080x1080>", "-strip",
+                 "-interlace", "Plane", "-quality", "78", f"jpg:{dest}"],
+            ).returncode == 0
+            if not resized:
                 # Pexels already serves a compressed 1400px JPEG.
                 raw.replace(dest)
             print(f"ok   {p['file']}")
