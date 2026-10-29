@@ -6,6 +6,7 @@ resized to 1080px wide and saved as progressive JPEGs.
 """
 import json
 import pathlib
+import shutil
 import subprocess
 import sys
 import urllib.request
@@ -30,11 +31,16 @@ def main() -> int:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=60) as r:
                 raw.write_bytes(r.read())
-            subprocess.run(
-                ["convert", str(raw), "-resize", "1080x1080>", "-strip",
-                 "-interlace", "Plane", "-quality", "78", str(dest)],
-                check=True,
-            )
+            tool = shutil.which("magick") or shutil.which("convert")
+            if tool:
+                subprocess.run(
+                    [tool, str(raw), "-resize", "1080x1080>", "-strip",
+                     "-interlace", "Plane", "-quality", "78", str(dest)],
+                    check=True,
+                )
+            else:
+                # Pexels already serves a compressed 1400px JPEG.
+                raw.replace(dest)
             print(f"ok   {p['file']}")
         except Exception as e:  # noqa: BLE001
             failed.append(p["file"])

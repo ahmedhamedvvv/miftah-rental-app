@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tool/fetch_photos.py
+      - run: (sudo apt-get install -y -qq imagemagick >/dev/null || true); python3 tool/fetch_photos.py
       - name: Commit new photos
         run: |
           git add assets/photos
@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tool/fetch_photos.py
+      - run: (sudo apt-get install -y -qq imagemagick >/dev/null || true); python3 tool/fetch_photos.py
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tool/fetch_photos.py
+      - run: (sudo apt-get install -y -qq imagemagick >/dev/null || true); python3 tool/fetch_photos.py
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
